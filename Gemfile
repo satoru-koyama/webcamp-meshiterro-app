@@ -53,3 +53,5 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 
 gem 'bootsnap', require: false
+
+gem 'kaminari','~> 1.2.1'
