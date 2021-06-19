@@ -1,8 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    post_images = PostImage.where(user_id: @user.id)
-    @post_images = post_images.page(params[:page]).reverse_order
+    @post_images = @user.post_images.page(params[:page]).reverse_order
   end
 
   def edit
